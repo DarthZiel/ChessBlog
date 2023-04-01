@@ -1,0 +1,10 @@
+{% extends 'Menu/base.html' %}
+{% load draw_menu %}
+
+
+{% block content %}
+{{block.super}}
+  <nav>{% draw_menu name %}</nav>
+    <h2>{{ name }}</h2>
+{% endblock %}
+
